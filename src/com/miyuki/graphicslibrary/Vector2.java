@@ -35,6 +35,10 @@ public class Vector2 {
 		return new Vector2(a.x / b.x, a.y / b.y);
 	}
 
+	public Vector2i toVector2i() {
+		return new Vector2i((int) this.x,(int) this.y);
+	}
+	
 	@Override
 	public String toString() {
 		return "{x: " + this.x + ",y: " + this.y + "}";
